@@ -1,5 +1,5 @@
-import { baseUrl } from "../../common/baseUrl";
-import { rl } from "../../common/rl";
+import { brasilApi } from "../../../common/baseUrl";
+import { rl } from "../../../common/rl";
 import { question, Scripts } from "../../fetch";
 
 export const dddMethod = async () => {
@@ -9,11 +9,11 @@ export const dddMethod = async () => {
 
   console.log("\n searching cities for:", ddd);
 
-  const fetchUrl = `${baseUrl}/ddd/v1/${ddd}`;
+  const fetchUrl = `${brasilApi}/ddd/v1/${ddd}`;
 
   try {
-    const cidades = await Scripts.fetchScript(fetchUrl, "GET");
-    console.log("\nResultado:\n", cidades);
+    const cities = await Scripts.fetchScript(fetchUrl, "GET");
+    console.log("\nResultado:\n", cities);
   } catch (error: any) {
     console.error("\nErro ao buscar cidades:", error.message);
   }

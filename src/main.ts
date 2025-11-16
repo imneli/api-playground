@@ -1,8 +1,8 @@
-import { dddMethod } from "./methods/ddd";
+import { cep } from "./methods/brasil-api/cep/cep";
 
 class Main {
   static async main() {
-    dddMethod();
+    cep("v2");
   }
 }
 

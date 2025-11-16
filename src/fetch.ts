@@ -1,5 +1,5 @@
-import { rl } from "./common/rl";
-import { HttpClient } from "./lib/http-client";
+import { rl } from "../common/rl";
+import { HttpClient } from "../lib/http-client";
 
 type HttpMethod = "GET" | "POST" | "PUT" | "DELETE";
 type MethodKey = Lowercase<HttpMethod>;

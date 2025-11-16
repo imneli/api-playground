@@ -1,1 +1,1 @@
-export const baseUrl = "https://brasilapi.com.br/api";
+export const brasilApi = "https://brasilapi.com.br/api";
