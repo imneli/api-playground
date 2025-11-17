@@ -3,7 +3,9 @@ import { HttpClient } from "../../../lib/http-client";
 import { question } from "../../question";
 
 export class CnpjService {
-  constructor(private readonly httpClient: HttpClient) {}
+  constructor(private readonly httpClient: HttpClient) {
+    this.httpClient = httpClient;
+  }
 
   public async getCpnj() {
     const input = await question("Digite um CNPJ:");

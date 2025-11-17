@@ -2,7 +2,9 @@ import { HttpClient } from "../../../lib/http-client";
 import { question } from "../../question";
 
 export class RegistroBrService {
-  constructor(private readonly httpClient: HttpClient) {}
+  constructor(private readonly httpClient: HttpClient) {
+    this.httpClient = httpClient;
+  }
 
   public async getDomainInfo() {
     const input = await question("digite um dominio: ");
