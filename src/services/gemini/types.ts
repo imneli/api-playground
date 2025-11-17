@@ -7,6 +7,18 @@ export interface GeminiContent {
   role: string; // "model" ou "user"
 }
 
+export interface GeminiModel {
+  name: string;
+  displayName: string;
+  description: string;
+  version: string;
+}
+
+export interface ListModelsResponse {
+  models: GeminiModel[];
+}
+
+
 export interface GeminiCandidate {
   content: GeminiContent;
   finishReason: string;
