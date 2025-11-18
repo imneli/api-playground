@@ -1,10 +1,18 @@
-import { brasilApiBaseUrl, discordApiBaseUrl } from "../common/baseUrls";
+import {
+  brasilApiBaseUrl,
+  discordApiBaseUrl,
+  viaCepBaseUrl,
+} from "../common/baseUrls";
 import { HttpClient } from "../lib/http-client";
 import { ExchangeService } from "./services/brasil-api/exchange.service";
 import { RegistroBrService } from "./services/brasil-api/registrobr.service";
 import { DiscordUserService } from "./services/discord-api/user.service";
 
 class Main {
+  public static async run() {
+    console.log("hello worllllld");
+  }
+
   public static async runBrasilApi() {
     const httpClient = new HttpClient(brasilApiBaseUrl);
 
